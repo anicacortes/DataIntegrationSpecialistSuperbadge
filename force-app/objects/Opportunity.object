@@ -174,6 +174,7 @@
     </fields>
     <fields>
         <fullName>CurrentGenerators__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Current Generator(s)</label>
         <length>100</length>
@@ -185,6 +186,7 @@
     </fields>
     <fields>
         <fullName>DeliveryInstallationStatus__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Delivery/Installation Status</label>
         <required>false</required>
@@ -238,6 +240,7 @@
     </fields>
     <fields>
         <fullName>MainCompetitors__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Main Competitor(s)</label>
         <length>100</length>
@@ -259,6 +262,7 @@
     </fields>
     <fields>
         <fullName>OrderNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Order Number</label>
         <length>8</length>
@@ -297,6 +301,7 @@
     </fields>
     <fields>
         <fullName>TrackingNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Tracking Number</label>
         <length>12</length>
@@ -442,6 +447,6 @@
         <protected>false</protected>
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
-        <url>http://www.fedex.com/cgi-bin/tracking?tracknumbers={!Opportunity_Tracking_Number}&amp;action=track&amp;language=english&amp;cntry_code=us</url>
+        <url>http://www.fedex.com/cgi-bin/tracking?tracknumbers={!Opportunity.TrackingNumber__c}&amp;action=track&amp;language=english&amp;cntry_code=us</url>
     </webLinks>
 </CustomObject>

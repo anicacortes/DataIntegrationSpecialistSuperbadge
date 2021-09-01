@@ -239,6 +239,7 @@
     </fields>
     <fields>
         <fullName>Active__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Active</label>
         <required>false</required>
@@ -274,6 +275,7 @@
     </fields>
     <fields>
         <fullName>CustomerPriority__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Customer Priority</label>
         <required>false</required>
@@ -344,6 +346,7 @@
     </fields>
     <fields>
         <fullName>NumberofLocations__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Number of Locations</label>
         <precision>3</precision>
@@ -379,6 +382,7 @@
     </fields>
     <fields>
         <fullName>SLAExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA Expiration Date</label>
         <required>false</required>
@@ -387,6 +391,7 @@
     </fields>
     <fields>
         <fullName>SLASerialNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA Serial Number</label>
         <length>10</length>
@@ -397,6 +402,7 @@
     </fields>
     <fields>
         <fullName>SLA__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA</label>
         <required>false</required>
@@ -459,6 +465,7 @@
     </fields>
     <fields>
         <fullName>UpsellOpportunity__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Upsell Opportunity</label>
         <required>false</required>
@@ -569,6 +576,6 @@
         <protected>false</protected>
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
-        <url>http://www.genwatt.com/genwatt/billing.htm?actname={!Account_Name}</url>
+        <url>http://www.genwatt.com/genwatt/billing.htm?actname={!Account.Name}</url>
     </webLinks>
 </CustomObject>
