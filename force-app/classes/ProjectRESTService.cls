@@ -6,18 +6,18 @@ global class ProjectRESTService {
             Date EndDate, Double Amount, String Status) {
         RestRequest req = RestContext.request;
 
-        Project__c projectRecord = new Project__c();
-        projectRecord.Name = ProjectName;
-        projectRecord.ProjectRef__c = ProjectRef;
-        projectRecord.Opportunity__c = OpportunityId;
-        projectRecord.Start_Date__c = StartDate;
-        projectRecord.End_Date__c = EndDate;
-        projectRecord.Billable_Amount__c = Amount;
-        projectRecord.Status__c = Status;
-
         Savepoint sp = Database.setSavepoint(); //Savepoint before making DML statements
-
         try {
+            Project__c projectRecord = new Project__c();
+            projectRecord.Name = ProjectName;
+            projectRecord.ProjectRef__c = ProjectRef;
+            projectRecord.Opportunity__c = OpportunityId;
+            projectRecord.Start_Date__c = StartDate;
+            projectRecord.End_Date__c = EndDate;
+            projectRecord.Billable_Amount__c = Amount;
+            projectRecord.Status__c = Status;
+
+
             upsert projectRecord ProjectRef__c;
 
             Opportunity oppRelated = [SELECT Id FROM Opportunity WHERE Id = :OpportunityId];
