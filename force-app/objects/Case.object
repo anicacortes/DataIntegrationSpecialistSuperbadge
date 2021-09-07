@@ -259,6 +259,7 @@
     </fields>
     <fields>
         <fullName>EngineeringReqNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Engineering Req Number</label>
         <length>12</length>
@@ -325,6 +326,7 @@
     </fields>
     <fields>
         <fullName>PotentialLiability__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Potential Liability</label>
         <required>false</required>
@@ -364,6 +366,7 @@
     </fields>
     <fields>
         <fullName>Product__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product</label>
         <required>false</required>
@@ -431,6 +434,7 @@
     </fields>
     <fields>
         <fullName>SLAViolation__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA Violation</label>
         <required>false</required>
@@ -592,6 +596,6 @@
         <protected>false</protected>
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
-        <url>https://na1.salesforce.com/opp/oppedit.jsp?accid={!Account_ID}&amp;opp3=Up-sell+/+Cross-sell&amp;opp5=Existing+Customer&amp;opp6=Customer+Support</url>
+        <url>https://na1.salesforce.com/opp/oppedit.jsp?accid={!Account.Id}&amp;opp3=Up-sell+/+Cross-sell&amp;opp5=Existing+Customer&amp;opp6=Customer+Support</url>
     </webLinks>
 </CustomObject>
